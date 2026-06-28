@@ -1,0 +1,121 @@
+.orders-page-title {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.empty-orders-card {
+  text-align: center;
+  padding: 50px 30px;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.order-card {
+  text-align: left;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.order-header {
+  background-color: var(--bg-tertiary);
+  border-bottom: 1px solid var(--border-color);
+  padding: 16px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.order-meta-label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.order-meta-val {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.text-primary-color {
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.order-items-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 30px;
+  padding: 24px;
+}
+
+@media (max-width: 768px) {
+  .order-items-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.order-items-box h4,
+.order-status-box h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 6px;
+}
+
+.order-item-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px dotted var(--border-color);
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.status-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.badge {
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.badge-success {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--success);
+}
+
+.badge-pending {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: var(--accent);
+}
+
+.shipping-address-summary {
+  margin-top: 20px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 15px;
+  font-size: 0.9rem;
+}
+
+.shipping-address-summary strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.shipping-address-summary p {
+  color: var(--text-secondary);
+}

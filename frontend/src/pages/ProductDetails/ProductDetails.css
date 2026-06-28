@@ -1,0 +1,141 @@
+.back-link {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.product-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .product-details-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product-details-image-container {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-secondary);
+}
+
+.product-details-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-details-info {
+  text-align: left;
+}
+
+.product-category-badge {
+  display: inline-block;
+  background-color: var(--primary-light);
+  color: var(--primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.product-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 15px 0;
+  text-align: left;
+}
+
+.product-rating-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.stars {
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
+.reviews-count {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.product-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.price-label {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+}
+
+.price-value {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.product-status-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.status-badge {
+  font-size: 0.85rem;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.status-badge.in-stock {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--success);
+}
+
+.status-badge.out-of-stock {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: var(--danger);
+}
+
+.product-description {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  border-top: 1px solid var(--border-color);
+  padding-top: 20px;
+}
+
+.qty-selector-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.qty-select {
+  max-width: 100px;
+}
+
+.btn-add-cart {
+  width: 100%;
+  padding: 14px !important;
+  font-size: 1.1rem !important;
+}
